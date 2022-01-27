@@ -1,0 +1,1436 @@
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_START_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ */
+/* == ALL == */
+* {
+    font-family: sans-serif;
+}
+
+thead {
+    background-color: #30397E;
+    color: white;
+}
+
+/* ==# ALL #== */
+
+/* =======================LIMIT======================= */
+
+/* == PROFILE == */
+/* MY PROFILE */
+.img_my_profile {
+    height: 380px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.btn_edit_and_change {
+    background-color: rgb(206, 114, 2);
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_edit_and_change:hover {
+    background-color: orange;
+    color: white;
+}
+
+.img_btn_my_profile {
+    width: 24px;
+    margin-top: -5px;
+    margin-right: 4px;
+}
+
+/* //MY PROFILE\\ */
+
+/* ------------------------------------------------ */
+
+/* EDIT PROFILE */
+.img_change_image_profile {
+    height: 330px;
+    width: 280px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.label_btn_change_image {
+    background-color: rgb(206, 114, 2);
+    color: white;
+    padding: 8px;
+    width: 170px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 94px;
+}
+
+.label_btn_change_image:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn_change_image_profile {
+    display: none;
+}
+
+.btn_save_edit_profile {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_save_edit_profile:hover {
+    background-color: rgb(3, 180, 3);
+    color: white;
+}
+
+.btn_cancel_edit_profile {
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_cancel_edit_profile:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_edit_profile {
+    width: 20px;
+    margin-top: -4px;
+    margin-right: 4px;
+}
+
+/* //EDIT PROFILE\\ */
+
+/* ------------------------------------------------ */
+
+/* CHANGE PASSWORD */
+.img_change_password {
+    width: 415px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.form_change_password {
+    margin-top: 40px;
+    margin-left: 400px;
+    margin-right: 45px;
+    margin-right: px;
+}
+
+.btn_save_change_password {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_save_change_password:hover {
+    background-color: rgb(3, 180, 3);
+    color: white;
+}
+
+.btn_cancel_change_password {
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_cancel_change_password:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_btn_change_password {
+    width: 20px;
+    margin-top: -4px;
+    margin-right: 4px;
+}
+
+/* //CHANGE PASSWORD\\ */
+/* ==# PROFILE #== */
+
+/* =======================LIMIT======================= */
+
+/* == HOME == */
+/* HOME */
+.btn_package {
+    margin-top: 87px;
+    width: 250px;
+    height: 200px;
+    background-color: #30397E;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn_package:hover {
+    background-color: #2A9DC9;
+}
+
+.txt_head_package {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.txt_name_package {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.img_package {
+    width: 80px;
+    margin-top: -5px;
+    margin-left: 164px;
+}
+
+.txt_powered_by {
+    font-weight: bold;
+    font-size: 8px;
+    text-align: left;
+    margin-left: 3px;
+    margin-top: -11px;
+    color: white;
+}
+
+/* //HOME\\ */
+
+/* ------------------------------------------------ */
+
+/* ORDER */
+.img_label_order {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_order {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon_calendar_estimate {
+    background: url("../ASSET/ICON/PACKAGE/bxs-calendarnew.svg") no-repeat 97%;
+    background-size: 25px;
+}
+
+.btn_order_checkout {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_order_checkout:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_order_checkout {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+/* //ORDER\\ */
+
+/* ------------------------------------------------ */
+
+/* CHECKOUT */
+.img_label_checkout {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_checkout {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn_checkout_pay {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_checkout_pay:hover {
+    background-color: green;
+    color: white;
+}
+
+.btn_checkout_edit {
+    background-color: rgb(206, 114, 2);
+    color: white;
+    font-weight: bold;
+}
+
+.btn_checkout_edit:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn_checkout_cancel {
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_checkout_cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_btn_checkout_pay_edit {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+.img_btn_checkout_cancel {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 3px;
+}
+
+/* //CHECKOUT\\ */
+
+/* ------------------------------------------------ */
+
+/* EDIT ORDER */
+.img_label_edit_order {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_edit_order {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon_calendar_edit_order_estimate {
+    background: url("../ASSET/ICON/PACKAGE/bxs-calendarnew.svg") no-repeat 97%;
+    background-size: 25px;
+}
+
+.btn_edit_order_checkout {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_edit_order_checkout:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_edit_order_checkout {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+/* //EDIT ORDER\\ */
+
+/* ------------------------------------------------ */
+
+/* DELETE ORDER */
+/* NONE !!! */
+/* //DELETE ORDER\\ */
+/* ==# HOME #== */
+
+/* =======================LIMIT======================= */
+
+/* == TRANSACTION  == */
+/* TRANSACTION*/
+.receptacle_transaction {
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+.txt_title_transaction {
+    font-weight: bold;
+    color: #30397E;
+}
+
+.txt_title_transaction_different_colour {
+    font-weight: bold;
+    color: #2A9DC9;
+}
+
+.form_search_transaction_id {
+    width: 300px;
+    height: 55px;
+    border: 2px solid #30397E;
+    text-align: center;
+}
+
+.txt_notif_transaction_id {
+    font-size: 12px;
+}
+
+.btn_search_transaction_id {
+    background-color: #30397E;
+    color: white;
+    width: 300px;
+    height: 55px;
+}
+
+.btn_search_transaction_id:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.txt_btn_search_transaction_id {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.img_transaction_ilustration {
+    width: 380px;
+    margin-left: -50px;
+    margin-top: -20px;
+}
+
+/* //TRANSACTION\\ */
+
+/* ------------------------------------------------ */
+/* DETAILS */
+.img_transaction_details {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_transaction_details {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn_transaction_details_pay_and_give {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_transaction_details_pay_and_give:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_transaction_details_pay_and_give {
+    width: 22px;
+    margin-top: -6px;
+    margin-right: 5px;
+}
+
+.notice_taken {
+    background-color: red;
+    border-radius: 3px;
+}
+
+.notice_still_process {
+    background-color: rgb(206, 114, 2);
+    border-radius: 3px;
+}
+
+/* //DETAILS\\ */
+/* ==# TRANSACTION #== */
+
+/* =======================LIMIT======================= */
+
+/* == CUSTOMER LIST ==  */
+/* CUSTOMER LIST */
+.btn_add_new_customer {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_add_new_customer:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_add_new_customer {
+    width: 25px;
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+.input_search_customer_list {
+    border: 1px solid #30397E;
+}
+
+.btn_search_customer_list {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_customer_list:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_customer_list {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_content_customer_list {
+    margin-top: 7px;
+    margin-bottom: -6px;
+}
+
+.btn_customer_details {
+    background-color: darkgreen;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.btn_customer_details:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_customer_details {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+.btn_edit_customer {
+    background-color: rgb(206, 114, 2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.btn_edit_customer:hover {
+    background-color: orange;
+    color: white;
+}
+
+.img_edit_customer {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+.btn_delete_customer {
+    background-color: darkred;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.btn_delete_customer:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_delete_customer {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -2px;
+}
+
+/* //CUSTOMER LIST\\ */
+
+/* ------------------------------------------------ */
+
+/* ADD NEW CUSTOMER */
+.btn_save_add_new_customer {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_save_add_new_customer:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //ADD NEW CUSTOMER\\ */
+
+/* ------------------------------------------------ */
+
+/* CUSTOMER DETAILS */
+/* NONE !!! */
+/* //CUSTOMER DETAILS */
+
+/* ------------------------------------------------ */
+
+/* EDIT CUSTOMER */
+.btn_save_edit_customer {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_save_edit_customer:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //EDIT CUSTOMER\\ */
+
+/* ------------------------------------------------ */
+
+/* DELETE CUSTOMER */
+/* NONE !!! */
+/* //DELETE CUSTOMER\\ */
+/* ==# CUSTOMER LIST #== */
+
+/* =======================LIMIT======================= */
+
+/* == PACKAGE SETTINGS ==*/
+/* PACKAGE SETTINGS */
+.btn_create_new_package {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_create_new_package:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_create_new_package {
+    width: 25px;
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+.input_search_package {
+    border: 1px solid #30397E;
+}
+
+.btn_search_package {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_package:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_package {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_content_package {
+    margin-top: 7px;
+    margin-bottom: -6px;
+}
+
+.btn_edit_package {
+    background-color: rgb(206, 114, 2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.btn_edit_package:hover {
+    background-color: orange;
+    color: white;
+}
+
+.img_edit_package {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+.btn_delete_package {
+    background-color: darkred;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.btn_delete_package:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_delete_package {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -2px;
+}
+
+/* //PACKAGE SETTINGS\\ */
+
+/* ------------------------------------------------ */
+
+/* CREATE NEW PACKAGE */
+.btn_cnp_save {
+    width: 170px;
+    font-weight: bold;
+    background-color: #30397E;
+    color: white;
+}
+
+.btn_cnp_save:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_cnp_save {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+/* //CREATE NEW PACKAGE\\ */
+
+/* ------------------------------------------------ */
+
+/* EDIT PACKAGE */
+.btn_save_edit_package {
+    width: 170px;
+    font-weight: bold;
+    background-color: #30397E;
+    color: white;
+}
+
+.btn_save_edit_package:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_save_edit_package {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+/* //EDIT PACKAGE\\ */
+
+/* ------------------------------------------------ */
+
+/* DELETE PACKAGE */
+/* NONE !!! */
+/* //DELETE PACKAGE\\ */
+/* ==# PACKAGE SETTINGS #== */
+
+/* =======================LIMIT======================= */
+
+/* == ITEM SETTINGS == */
+/* SHOW ITEM */
+.btn_add_new_item {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_add_new_item:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_add_new_item {
+    width: 25px;
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+.input_search_item {
+    border: 1px solid #30397E;
+}
+
+.btn_search_item {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_item:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_item_settings {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_content_item_settings {
+    margin-top: 7px;
+    margin-bottom: -6px;
+}
+
+.btn_edit_item {
+    background-color: rgb(206, 114, 2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.btn_edit_item:hover {
+    background-color: orange;
+    color: white;
+}
+
+.img_edit_item {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+.btn_delete_item {
+    background-color: darkred;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.btn_delete_item:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_delete_item {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -2px;
+}
+
+/* //SHOW ITEM\\ */
+
+/* ------------------------------------------------ */
+
+/* ADD NEW ITEM */
+.btn_save_new_item {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_save_new_item:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //ADD NEW ITEM\\ */
+
+/* ------------------------------------------------ */
+
+/* EDIT ITEM */
+.btn_save_edit_item {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_save_edit_item:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //EDIT ITEM\\ */
+
+/* ------------------------------------------------ */
+
+/* DELETE ITEM */
+/* NONE !!! */
+/* //DELETE ITEM\\ */
+/* ==# ITEM SETTINGS #== */
+
+/* =======================LIMIT======================= */
+
+/* == USERS == */
+/* USER LIST */
+.btn_add_new_user {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_add_new_user:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_btn_add_new_user {
+    width: 25px;
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+.input_search_user {
+    border: 1px solid #30397E;
+}
+
+.btn_search_user {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_user:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_users {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_table_users {
+    margin-top: 32px;
+}
+
+.img_user_list {
+    border-radius: 3px;
+    width: 42px;
+    height: 48px;
+    margin-top: 16px;
+}
+
+.btn_details_users {
+    background-color: darkgreen;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.btn_details_users:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_btn_details_users {
+    width: 26px;
+    margin-left: -6px;
+    margin-top: -1px;
+}
+
+.btn_delete_users {
+    background-color: darkred;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.btn_delete_users:hover {
+    background-color: red;
+    color: white;
+}
+
+.img_btn_delete_users {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -2px;
+}
+
+/* //USER LIST\\ */
+
+/* ------------------------------------------------ */
+
+/* ADD NEW USER */
+.icon_calendar_new_user {
+    background: url("../ASSET/ICON/PACKAGE/bxs-calendarnew.svg") no-repeat 97%;
+    background-size: 25px;
+}
+
+.btn_save_new_user {
+    background-color: #30397E;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.btn_save_new_user:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_btn_save_new_user {
+    width: 20px;
+    margin-top: -4px;
+    margin-left: -5px;
+}
+
+/* //ADD NEW USER\\ */
+
+/* ------------------------------------------------ */
+
+/* USER DETAILS */
+.img_user_details {
+    width: 260px;
+    height: 310px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+/* //USER DETAILS\\ */
+
+/* ------------------------------------------------ */
+
+/* DELETE USER */
+/* NONE !!! */
+/* //DELETE USER */
+/* ==# USERS #== */
+
+/* =======================LIMIT======================= */
+
+/* == REPORT == */
+/* REPORT */
+.label_bar_report {
+    width: 206px;
+    background-color: #30397E;
+    border: none;
+    border-radius: 5px;
+}
+
+.label_bar_report:hover {
+    background-color: #2A9DC9;
+}
+
+.txt_head_bar_report {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.txt_body_bar_report {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.txt_body_bar_report_profit {
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.img_bar_report_customers {
+    width: 60px;
+    margin-top: -15px;
+    margin-left: 135px;
+}
+
+.img_bar_report_on_process {
+    width: 60px;
+    margin-top: -15px;
+    margin-left: 140px;
+}
+
+.img_bar_report_finished {
+    width: 60px;
+    margin-top: -15px;
+    margin-left: 147px;
+}
+
+.img_bar_report_taken {
+    width: 60px;
+    margin-top: -15px;
+    margin-left: 143px;
+}
+
+.img_bar_report_profit {
+    width: 60px;
+    margin-top: -3px;
+    margin-left: 139px;
+}
+
+.txt_powered_by_report {
+    font-weight: bold;
+    font-size: 8px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -11px;
+    color: white;
+}
+
+.txt_powered_by_report_profit {
+    font-weight: bold;
+    font-size: 8px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: -14px;
+    color: white
+}
+
+.btn_export_to_excel_report {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+    font-size: 12px;
+}
+
+.btn_export_to_excel_report:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.img_export_to_excel_report {
+    width: 15px;
+    margin-top: -2px;
+    margin-left: 4px;
+}
+
+.input_search_data_table_report {
+    border: 1px solid #30397E;
+    font-size: 12px;
+}
+
+.btn_search_data_table_report {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+    font-size: 12px;
+}
+
+.btn_search_data_table_report:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_report {
+    font-size: 11px;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_table_report {
+    margin-top: 15px;
+}
+
+/* //REPORT\\ */
+
+/* ------------------------------------------------ */
+
+/* CUSTOMERS */
+.input_search_customer_report {
+    border: 1px solid #30397E;
+}
+
+.btn_search_customer_report {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_customer_report:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_customers_report {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_table_customers_report {
+    margin-top: 15px;
+}
+
+.btn_customer_details_report {
+    background-color: darkgreen;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.btn_customer_details_report:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_customer_details_report {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+/* //CUSTOMERS\\ */
+
+/* ------------------------------------------------ */
+
+/* CUSTOMER DETAILS REPORT */
+/* NONE !!! */
+/* //CUSTOMER DETAILS REPORT\\ */
+
+/* ------------------------------------------------ */
+
+/* ON PROCESS */
+.input_search_data_table_on_process {
+    border: 1px solid #30397E;
+}
+
+.btn_search_data_table_on_process {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_data_table_on_process:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_on_process {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_table_on_process {
+    margin-top: 15px;
+}
+
+.btn_on_process_details {
+    background-color: darkgreen;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.btn_on_process_details:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_btn_on_process_details {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+/* //ON PROCESS\\ */
+
+/* ------------------------------------------------ */
+
+/* ON PROCESS DETAILS */
+.img_label_on_process_details {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_on_process_details {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn_finished_on_process {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_finished_on_process:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_btn_finished_on_process {
+    width: 22px;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+
+/* //ON PROCESS DETAILS\\ */
+
+/* ------------------------------------------------ */
+
+/* FINISHED */
+.input_search_data_finished {
+    border: 1px solid #30397E;
+}
+
+.btn_search_data_finished {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_data_finished:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_finished {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_table_finished {
+    margin-top: 15px;
+}
+
+.btn_finished_details {
+    background-color: darkgreen;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.btn_finished_details:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_btn_finished_details {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+/* //FINISHED\\ */
+
+/* ------------------------------------------------ */
+
+/* FINISHED DETAILS */
+.img_label_finished_details {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_finished_details {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notice_not_taken_yet {
+    background-color: rgb(206, 114, 2);
+    border-radius: 3px;
+}
+
+.notice_not_yet_paid_off {
+    background-color: rgb(206, 114, 2);
+    border-radius: 3px;
+}
+
+/* //FINISHED DETAILS\\ */
+
+/* ------------------------------------------------ */
+
+/* TAKEN */
+.input_search_data_table_taken {
+    border: 1px solid #30397E;
+}
+
+.btn_search_data_table_taken {
+    background-color: #30397E;
+    color: white;
+    border: 1px solid #30397E;
+}
+
+.btn_search_data_table_taken:hover {
+    background-color: #2A9DC9;
+    color: white;
+}
+
+.table_taken {
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.txt_table_taken {
+    margin-top: 15px;
+}
+
+.btn_taken_details {
+    background-color: darkgreen;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.btn_taken_details:hover {
+    background-color: green;
+    color: white;
+}
+
+.img_btn_taken_details {
+    width: 30px;
+    margin-left: -8px;
+    margin-top: -1.5px;
+}
+
+/* //TAKEN\\ */
+
+/* ------------------------------------------------ */
+
+/* TAKEN DETAILS */
+.img_label_taken_details {
+    width: 25px;
+    margin-top: -6px;
+}
+
+.label_taken_details {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notice_taken_report {
+    background-color: red;
+    border-radius: 3px;
+}
+
+/* //TAKEN DETAILS\\ */
+/* ==# REPORT #== */
+
+/* =======================LIMIT======================= */
+
+/* ==NOT FOUND== */
+.count_not_found {
+    width: 800px;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.img_not_found {
+    margin-left: 250px;
+    width: 200px;
+}
+
+.txt_announcement_not_found {
+    margin-left: 280px;
+}
+
+.txt_announcement_content_not_found {
+    margin-left: 220px;
+}
+
+/* ==# NOT FOUND #== */
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_THE END_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ */

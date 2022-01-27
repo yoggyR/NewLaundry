@@ -1,0 +1,225 @@
+/* ------------------------START------------------------ */
+/* ALL */
+* {
+    font-family: sans-serif;
+}
+
+/* //ALL\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* MAIN */
+
+/* HEADER */
+.navbar {
+    background-color: #EEEEEE;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar-brand {
+    background-color: white;
+    width: 90px;
+    height: 70px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img_logo {
+    width: 60px;
+    margin-left: 13px;
+}
+
+.date_head {
+    margin-left: 130px;
+}
+
+.img_calendar {
+    width: 20px;
+    margin-top: -5px;
+}
+
+.btn_profile {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #30397E;
+}
+
+.img_header_profile {
+    background-color: white;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+
+/* //HEADER\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 215px 15px 0;
+    width: 90px;
+    background-color: #EEEEEE;
+    border-bottom-right-radius: 10px;
+}
+
+.img_home {
+    width: 25px;
+    text-align: center;
+}
+
+.img_home:hover {
+    content: url(../ASSET/ICON/BACK/bxs-home.svg);
+}
+
+.img_transaction {
+    width: 25px;
+}
+
+.img_transaction:hover {
+    content: url(../ASSET/ICON/BACK/iconmonstr-file-37.svg);
+}
+
+.img_customer_list {
+    width: 25px;
+}
+
+.img_customer_list:hover {
+    content: url(../ASSET/ICON/BACK/iconmonstr-user-31.svg);
+}
+
+.img_package_settings {
+    width: 25px;
+}
+
+.img_package_settings:hover {
+    content: url(../ASSET/ICON/BACK/bxs-box.svg);
+}
+
+.img_item_settings {
+    width: 25px;
+}
+
+.img_item_settings:hover {
+    content: url(../ASSET/ICON/BACK/iconmonstr-clothing-2.svg);
+}
+
+.img_users {
+    width: 25px;
+}
+
+.img_users:hover {
+    content: url(../ASSET/ICON/BACK/iconmonstr-user-16.svg);
+}
+
+.img_report {
+    width: 25px;
+}
+
+.img_report:hover {
+    content: url(../ASSET/ICON/BACK/bxs-note.svg);
+}
+
+.img_logout_admin {
+    margin-top: 95px;
+    width: 25px;
+}
+
+.img_logout_admin:hover {
+    content: url(../ASSET/ICON/BACK/bxs-log-out-circle.svg);
+}
+
+.txt_copyright_admin {
+    font-size: 7px;
+    text-align: center;
+    margin-top: -12px;
+    font-weight: bold;
+}
+
+.img_logout_cashier {
+    margin-top: 160px;
+    width: 25px;
+}
+
+.img_logout_cashier:hover {
+    content: url(../ASSET/ICON/BACK/bxs-log-out-circle.svg);
+}
+
+.txt_copyright_cashier {
+    font-size: 7px;
+    text-align: center;
+    margin-top: -9px;
+    font-weight: bold;
+}
+
+/* //SIDEBAR\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* POP UP */
+h5 {
+    color: #30397E;
+    font-weight: bold;
+}
+
+.img_pop_up {
+    width: 200px;
+    margin-left: 135px;
+}
+
+.txt_announcement {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.txt_announcement_content {
+    font-size: 23px;
+    text-align: center;
+}
+
+.btn_choice {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_choice:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* ADDITION ABOUT US */
+
+.img_emblem {
+    width: 150px;
+    margin-left: 152px;
+    margin-top: -5px;
+}
+
+.txt_title {
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    color: #30397E;
+    margin-top: -10px;
+}
+
+.txt_description {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* //ADDITION ABOUT US\\ */
+
+/* //POP UP\\ */
+
+/* //MAIN\\ */
+
+/* -------------------------END------------------------- */

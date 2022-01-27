@@ -1,0 +1,69 @@
+ICON  
+====
+1.  bxs-home			= https://boxicons.com/?query=home
+2.  bxs-box			= https://boxicons.com/?query=box
+3.  bxs-calendar		= https://boxicons.com/?query=calendar
+4.  bxs-log-out-circle		= https://boxicons.com/?query=log
+5.  iconmonstr-user-31		= https://iconmonstr.com/user-31-svg/
+6.  bxs-up-arrow-circle		= https://boxicons.com/?query=arrow
+7.  bxs-save			= https://boxicons.com/?query=save
+8.  bxs-trash			= https://boxicons.com/?query=trash
+9.  close-circle-fill		= https://remixicon.com/
+10. file-excel-2-fill		= https://remixicon.com/
+11. bxs-image			= https://boxicons.com/?query=image
+12. bx-plus			= https://boxicons.com/?query=plus
+13. bxs-right-arrow		= https://boxicons.com/?query=arrow
+14. bxs-left-arrow		= https://boxicons.com/?query=arrow
+15. bxs-edit			= https://boxicons.com/?query=edit
+16. bxs-note			= https://boxicons.com/?query=note
+17. iconmonstr-user-16		= https://iconmonstr.com/user-16-svg/
+18. iconmonstr-id-card-1	= https://iconmonstr.com/id-card-1-svg/
+19. iconmonstr-clothing-2	= https://iconmonstr.com/clothing-2-svg/
+20. iconmonstr-file-37		= https://iconmonstr.com/file-37-svg/
+21. johnny-automatic-Services-5	= https://publicdomainvectors.org/en/free-clipart/US-National-Park-Maps-pictogram-for-a-laundry-facility-vector-image/22576.html
+22. wallet-fill			= https://remixicon.com/
+23. flag-fill			= https://remixicon.com/
+24. flag-line			= https://remixicon.com/
+25. iconmonstr-user-22		= https://iconmonstr.com/user-22-svg/
+26. refresh-line		= https://remixicon.com/
+27. wallet-line			= https://remixicon.com/
+28. bx-shopping-bag		= https://boxicons.com/?query=bag
+29. bxs-shopping-bag		= https://boxicons.com/?query=bag
+
+LOGO
+====
+1.  johnny-automatic-Services-5	= https://publicdomainvectors.org/en/free-clipart/US-National-Park-Maps-pictogram-for-a-laundry-facility-vector-image/22576.html
+
+IMAGE/FOTO
+===========
+1.  amir-seilsepour-5vg_SarQimA-unsplash 		 = https://unsplash.com/photos/5vg_SarQimA
+2.  alexandra-poliakova-EXCroywwrEw-unsplash 		 = https://unsplash.com/photos/EXCroywwrEw
+3.  erik-lucatero-d2MSDujJl2g-unsplash			 = https://unsplash.com/photos/d2MSDujJl2g
+
+BACKGROUND
+==========
+1.  luke-chesser-pJadQetzTkI-unsplash 			 = https://unsplash.com/photos/pJadQetzTkI 
+
+COLORS
+======
+1. #30397E						 = https://html-color-codes.info/colors-from-image/#  luke-chesser-pJadQetzTkI-unsplash
+2. #EEEEEE						 = https://colorhunt.co/palette/faff00ff3f008e2657eeeeee
+3. #2A9DC9						 = https://html-color-codes.info/colors-from-image/#  alexandra-poliakova-EXCroywwrEw-unsplash
+
+ILUSTRATION 
+===========
+1.  undraw_void_3ggu
+2.  undraw_Throw_away_re_x60k
+3.  undraw_security_o890
+4.  undraw_Preferences_re_49in
+5.  undraw_No_data_re_kwbl
+6.  undraw_Forgot_password_re_hxwm
+7.  undraw_Done_re_oak4
+8.  undraw_cancel_u1it
+9.  undraw_Add_file_re_s4qf
+10. undraw_Notify_re_65on
+
+
+ 						
+
+

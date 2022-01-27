@@ -1,0 +1,273 @@
+/* ------------------------START------------------------ */
+
+/* ALL */
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../ASSET/BACKGROUND/luke-chesser-pJadQetzTkI-unsplash.jpg);
+    background-size: cover;
+}
+
+.con_all {
+    width: 760px;
+    margin: auto;
+    padding-top: 14px;
+}
+
+/* //ALL\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* FVC (Forgot your password, Verification, Create new password) */
+.btn_try_FVC {
+    text-decoration: none;
+    color: #30397E;
+    font-weight: bold;
+}
+
+.btn_try_FVC:hover {
+    color: #2A9DC9;
+}
+
+.txt_copyright_FVC {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* //FVC (Forgot your password, Verification, Create new password)\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* LOG IN */
+.receptacle_login {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 62px;
+}
+
+.img_washing_machine {
+    margin-left: -12px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 500px;
+}
+
+.form_login {
+    margin-right: 20px;
+}
+
+.img_logo_login {
+    margin-left: 120px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.txt_label_login {
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #30397E;
+}
+
+.btn_login {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_login:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.btn_forgot_password {
+    text-decoration: none;
+    color: #30397E;
+    font-weight: bold;
+}
+
+.btn_forgot_password:hover {
+    color: #2A9DC9;
+}
+
+.txt_copyright_login {
+    margin-top: 39px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* //LOG IN\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* FORGOT_PASSWORD */
+.receptacle_forgot {
+    margin-top: 29px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 100px 0px 100px;
+}
+
+.txt_label_forgot {
+    font-weight: bold;
+    text-align: center;
+    color: #30397E;
+}
+
+.img_forgot {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.btn_send {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_send:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //FORGOT_PASSWORD\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* VERIFICATION */
+.receptacle_verification {
+    margin-top: 16px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 100px 0px 100px;
+}
+
+.txt_label_verification {
+    font-weight: bold;
+    text-align: center;
+    color: #30397E;
+}
+
+.img_verification {
+    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 120px;
+}
+
+.txt_description_verification {
+    text-align: center;
+}
+
+.form_input_code_verification {
+    margin-left: 130px;
+}
+
+.btn_verification {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_verification:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //VERIFICATION\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* NEW_PASSWORD*/
+.receptacle_new_password {
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 100px 0px 100px;
+}
+
+.txt_label_new_password {
+    font-weight: bold;
+    text-align: center;
+    color: #30397E;
+}
+
+.img_new_password {
+    width: 205px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.txt_description_new_password {
+    text-align: center;
+}
+
+.btn_reset {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_reset:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //NEW_PASSWORD\\ */
+
+/* ------------------------LIMIT------------------------ */
+
+/* POP UP DONE */
+h5 {
+    color: #30397E;
+    font-weight: bold;
+}
+
+.img_done {
+    width: 200px;
+    margin-left: 135px;
+}
+
+.txt_warnig_done {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.txt_warning_description_done {
+    font-size: 22px;
+    text-align: center;
+}
+
+.btn_ok_done {
+    background-color: #30397E;
+    color: white;
+    font-weight: bold;
+}
+
+.btn_ok_done:hover {
+    background-color: #2A9DC9;
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+/* //POP UP DONE\\ */
+
+
+/* -------------------------END------------------------- */
