@@ -6,16 +6,6 @@ $showCheckout = showTransaction("SELECT * FROM t_header
                                 INNER JOIN m_users    ON t_header.fk_id_users = m_users.pk_id_users
                                 ORDER BY pk_id_header DESC LIMIT 1");
 
-$listDetails = showTransaction("SELECT * FROM t_details");
-foreach ($listDetails as $list) {
-    $detail = $list['fk_id_header'];
-}
-
-$listItem = showTransaction("SELECT * FROM bridge
-                                INNER JOIN t_details ON bridge.pk_id_bridge = t_details.fk_id_bridge
-                                INNER JOIN m_items  ON bridge.fk_id_items = m_items.pk_id_items
-                                WHERE fk_id_header = '$detail'");
-
 if (isset($_POST['pay'])) {
     if (insertMoney($_POST) > 0) {
         echo "
@@ -34,6 +24,7 @@ if (isset($_POST['pay'])) {
 
 <?php foreach ($showCheckout as $checkout) : ?>
     <?php
+    $pkIdHeader     = $checkout['pk_id_header'];
     $payNow         = $checkout['pay_now'];
     $packagePrice   = $checkout['package_price'];
     $weight         = $checkout['weight'];
@@ -51,6 +42,7 @@ if (isset($_POST['pay'])) {
             <form action="" method="POST">
                 <div class="countainer border" style="padding: 20px;">
                     <input type="hidden" name="pkIdHeader" value="<?php echo $checkout['pk_id_header'] ?>">
+                    <input type="hidden" name="updated_by" value="<?php echo $_SESSION['username'] ?>">
                     <input type="hidden" name="already" value="<?php echo $already ?>">
                     <input type="hidden" name="remainder" value="<?php echo $remainder ?>">
                     <div class="row">
@@ -72,40 +64,41 @@ if (isset($_POST['pay'])) {
                                 <div class="col-8">
                                     <label><?php echo $checkout['transaction_code'] ?></label>
                                 </div>
-
                                 <div class="col-4 pb-3">
                                     <label class="fw-bold">Customer name</label>
                                 </div>
                                 <div class="col-8">
                                     <label><?php echo $checkout['full_name'] ?></label>
                                 </div>
-
                                 <div class="col-4 pb-3">
                                     <label class="fw-bold">Phone number</label>
                                 </div>
                                 <div class="col-8">
                                     <label><?php echo $checkout['phone_number'] ?></label>
                                 </div>
-
                                 <div class="col-4 pb-3">
                                     <label class="fw-bold">Address</label>
                                 </div>
                                 <div class="col-8 pb-3">
                                     <label><?php echo $checkout['address'] ?></label>
                                 </div>
-
                                 <div class="col-4 pb-3">
                                     <label class="fw-bold">Order</label>
                                 </div>
                                 <div class="col-8">
                                     <label><?php echo date('d-m-Y', strtotime($checkout['date_order'])) ?></label>
                                 </div>
-
                                 <div class="col-4 pb-3">
-                                    <label class="fw-bold">Estimate finished</label>
+                                    <label class="fw-bold">Estimate</label>
                                 </div>
                                 <div class="col-8">
-                                    <label><?php echo date('d-m-Y', strtotime($checkout['estimate_finished'])) ?></label>
+                                    <label><?php echo date('d-m-Y', strtotime($checkout['date_estimate'])) ?></label>
+                                </div>
+                                <div class="col-4 pb-3">
+                                    <label class="fw-bold">Finished</label>
+                                </div>
+                                <div class="col-8">
+                                    <label></label>
                                 </div>
                                 <div class="col-4 pb-3">
                                     <label class="fw-bold">Note</label>
@@ -123,6 +116,12 @@ if (isset($_POST['pay'])) {
                                 </div>
                                 <div class="col-8">
                                     <div class="row">
+                                        <?php
+                                        $listItem = showTransaction("SELECT * FROM bridge
+                                        INNER JOIN t_details ON bridge.pk_id_bridge = t_details.fk_id_bridge
+                                        INNER JOIN m_items  ON bridge.fk_id_items = m_items.pk_id_items
+                                        WHERE fk_id_header = $pkIdHeader");
+                                        ?>
                                         <?php foreach ($listItem as $item) : ?>
                                             <?php if ($item['units'] != 0) : ?>
                                                 <div class='col-6 pb-3'>

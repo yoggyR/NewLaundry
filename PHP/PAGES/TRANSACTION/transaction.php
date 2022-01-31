@@ -3,9 +3,7 @@
 </div>
 <?php
 include('../FUNCTIONS/functions_transaction.php');
-if (isset($_POST["search"])) {
-    $showCheckout = searchTransaction($_POST["keyword"]);
-}
+
 ?>
 <div class='row'>
     <div class="md-col-12">

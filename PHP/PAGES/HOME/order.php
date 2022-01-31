@@ -39,12 +39,11 @@ if (isset($_POST["checkout"])) {
             <input type="hidden" name="package_price" value="<?php echo $package['package_price']; ?>">
             <input type="hidden" name="created_by" value="<?php echo $_SESSION['username'] ?>">
             <input type="hidden" name="updated_by" value="<?php echo $_SESSION['username'] ?>">
-            <input type="hidden" name="process_status" value="On process">
+            <input type="hidden" name="laundry_status" value="On process">
             <input type="hidden" name="price">
             <input type="hidden" name="already">
             <input type="hidden" name="remainder">
             <input type="hidden" name="pay">
-            <input type="hidden" name="taken_status" value="No">
             <div class="countainer">
                 <div class="row justify-content-center">
                     <div class="col-8 pb-3" style="margin-top: -5px;">

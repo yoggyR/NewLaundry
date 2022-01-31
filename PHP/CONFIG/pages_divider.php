@@ -96,12 +96,8 @@ elseif ($pages == 'Report') {
     include('../PAGES/REPORT/finished.php');
 } elseif ($pages == 'Taken') {
     include('../PAGES/REPORT/taken.php');
-} elseif ($pages == 'On process details') {
-    include('../PAGES/REPORT/on_process_details.php');
-} elseif ($pages == 'Finished details') {
-    include('../PAGES/REPORT/finished_details.php');
-} elseif ($pages == 'Taken details') {
-    include('../PAGES/REPORT/taken_details.php');
+} elseif ($pages == 'oft details') {
+    include('../PAGES/REPORT/oft_details.php');
 } elseif ($pages == 'Customers') {
     include('../PAGES/REPORT/customers.php');
 }

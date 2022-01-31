@@ -37,9 +37,9 @@ function addTransaction($addTransaction)
         $already            = htmlspecialchars($addTransaction['already']);
         $remainder          = htmlspecialchars($addTransaction['remainder']);
         $pay                = htmlspecialchars($addTransaction['pay']);
-        $processStatus      = htmlspecialchars($addTransaction['process_status']);
-        $taken              = date('Y-m-d');
-        $takenStatus        = htmlspecialchars($addTransaction['taken_status']);
+        $laundryStatus      = htmlspecialchars($addTransaction['laundry_status']);
+        $dateLaundryStatus  = date('Y-m-d');
+        $dateFinished       = date('Y-m-d');
         $createdAt          = date('Y-m-d');
         $createdBy          = htmlspecialchars($addTransaction['created_by']);
         $updatedAt          = date('Y-m-d');
@@ -50,20 +50,20 @@ function addTransaction($addTransaction)
                                                         fk_id_users,
                                                         transaction_code,
                                                         date_order,
-                                                        estimate_finished,
+                                                        date_estimate,
+                                                        date_finished,
                                                         weight,
                                                         note,
                                                         price,
                                                         already,
                                                         remainder,
                                                         pay_now,
-                                                        process_status,
-                                                        date_taken,
-                                                        taken_status,
-                                                        created_at,
-                                                        created_by,
-                                                        updated_at,
-                                                        updated_by)
+                                                        laundry_status,
+                                                        date_laundry_status,
+                                                        created_at_header,
+                                                        created_by_header,
+                                                        updated_at_header,
+                                                        updated_by_header)
 
                                             VALUES      ('',
                                                         '$fkIdPackages',
@@ -71,15 +71,15 @@ function addTransaction($addTransaction)
                                                         '$transactionCode',
                                                         '$dateOrder',
                                                         '$estimate',
+                                                        '$dateFinished',
                                                         '$weight',
                                                         '$note',
                                                         '$price',
                                                         '$already',
                                                         '$remainder',
                                                         '$pay',
-                                                        '$processStatus',
-                                                        '$taken',
-                                                        '$takenStatus',
+                                                        '$laundryStatus',
+                                                        '$dateLaundryStatus',
                                                         '$createdAt',
                                                         '$createdBy',
                                                         '$updatedAt',
@@ -122,7 +122,10 @@ function deleteTransaction($id)
 // SEARCH
 function searchTransaction($keyword)
 {
-    $query = "SELECT * FROM t_header WHERE transaction_code  LIKE '$keyword'";
+    $query = "SELECT * FROM t_header 
+            INNER JOiN m_packages ON t_header.fk_id_packages = m_packages.pk_id_packages
+            INNER JOIN m_users    ON t_header.fk_id_users = m_users.pk_id_users
+            WHERE transaction_code  LIKE '$keyword'";
     return showTransaction($query);
 }
 // SEARCH \\
@@ -139,6 +142,8 @@ function insertMoney($money)
     $rm             = htmlspecialchars($money['remainder']);
     $already        = $al + $pay;
     $remainder      = $price - $already;
+    $updatedAt      = date('Y-m-d');
+    $updatedBy      = htmlspecialchars($money['updated_by']);
 
 
     if ($rm == 0) {
@@ -154,33 +159,62 @@ function insertMoney($money)
         echo "
         <script>
             alert ('Failed');
-            document.location.href = 'main.php?page=Checkout';
+            document.location.href = 'main.php?page=Details';
         </script>";
         exit;
     }
 
-    mysqli_query($connect, "UPDATE t_header SET     price           = '$price',
-                                                    already         = '$already',
-                                                    remainder       = '$remainder',
-                                                    pay_now         = '$pay'
-                                            WHERE   pk_id_header    = '$pkIdHeader'");
+    mysqli_query($connect, "UPDATE t_header SET     price               = '$price',
+                                                    already             = '$already',
+                                                    remainder           = '$remainder',
+                                                    pay_now             = '$pay',
+                                                    updated_by_header   = '$updatedBy',
+                                                    updated_at_header   = '$updatedAt'
+                                            WHERE   pk_id_header        = '$pkIdHeader'");
 
     return mysqli_affected_rows($connect);
 }
 // INSERT MONEY \\
+
+// FINISHED
+function laundryStatus($finished)
+{
+    global $connect;
+
+    $pkIdHeader         = $finished['pkIdHeader'];
+    $laundryStatus      = htmlspecialchars($finished['laundry_status']);
+    $dateLaundryStatus  = date('Y-m-d');
+    $dateFinished       = date('Y-m-d');
+    $updatedAt          = date('Y-m-d');
+    $updatedBy          = htmlspecialchars($finished['updated_by']);
+
+    mysqli_query($connect, "UPDATE t_header SET     date_laundry_status = '$dateLaundryStatus',
+                                                    laundry_status      = '$laundryStatus',
+                                                    date_finished       = '$dateFinished',
+                                                    updated_by_header   = '$updatedBy',
+                                                    updated_at_header   = '$updatedAt'
+                                            WHERE   pk_id_header        = '$pkIdHeader'");
+
+    return mysqli_affected_rows($connect);
+}
+// FINISHED \\
 
 // GIVE
 function give($give)
 {
     global $connect;
     $pkIdHeader         = $give['pkIdHeader'];
-    $taken              = date('Y-m-d');
-    $takenStatus        = htmlspecialchars($give['taken_status']);
+    $laundryStatus      = htmlspecialchars($give['laundry_status']);
+    $dateLaundryStatus  = date('Y-m-d');
+    $updatedAt          = date('Y-m-d');
+    $updatedBy          = htmlspecialchars($give['updated_by']);
 
-    mysqli_query($connect, "UPDATE t_header SET     date_taken      = '$taken',
-                                                    taken_status    = '$takenStatus'
-                                            WHERE   pk_id_header    = '$pkIdHeader'");
-                                            
+    mysqli_query($connect, "UPDATE t_header SET     date_laundry_status = '$dateLaundryStatus',
+                                                    laundry_status      = '$laundryStatus',
+                                                    updated_by_header   = '$updatedBy',
+                                                    updated_at_header   = '$updatedAt'
+                                            WHERE   pk_id_header        = '$pkIdHeader'");
+
     return mysqli_affected_rows($connect);
 }
 // GIVE \\

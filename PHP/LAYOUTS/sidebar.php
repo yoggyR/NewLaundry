@@ -28,6 +28,11 @@
         <?php endif; ?>
         <?php if ($_SESSION['position_name'] == "Admin") : ?>
             <ul class="nav flex-column">
+                <li class="nav-item mb-4">
+                    <a class="nav-link" href="main.php?page=Report" type="button" title="Report">
+                        <img src="../../ASSET/ICON/FRONT/bxs-note.svg" alt="" class="img_report">
+                    </a>
+                </li>
                 <li class=" nav-item mb-4">
                     <a class="nav-link" href="main.php?page=Package settings" type="button" title="Package settings">
                         <img src="../../ASSET/ICON/FRONT/bxs-box.svg" alt="" class="img_package_settings">
@@ -41,12 +46,6 @@
                 <li class="nav-item mb-4">
                     <a class="nav-link" href="main.php?page=Users" type="button" title="Users">
                         <img src="../../ASSET/ICON/FRONT/iconmonstr-user-16.svg" alt="" class="img_users">
-                    </a>
-                </li>
-
-                <li class="nav-item mb-4">
-                    <a class="nav-link" href="main.php?page=Report" type="button" title="Report">
-                        <img src="../../ASSET/ICON/FRONT/bxs-note.svg" alt="" class="img_report">
                     </a>
                 </li>
                 <li class="nav-item mb-3">

@@ -37,9 +37,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <h5 class="me-auto fw-bold">Transaction amount : 3</h5>
-                </div>
             </form>
         </div>
     </div>

@@ -52,13 +52,13 @@ if (isset($_POST["search"])) {
                                     <p class="txt_content_customer_list"><?php echo $list['phone_number'] ?></p>
                                 </td>
                                 <td>
-                                    <p class="txt_content_customer_list"><?php echo $list['created_at'] ?></p>
+                                    <p class="txt_content_customer_list"><?php echo date('d-m-Y', strtotime($list['created_at'])) ?></p>
                                 </td>
                                 <td>
                                     <p class="txt_content_customer_list"><?php echo $list['created_by'] ?></p>
                                 </td>
                                 <td>
-                                    <p class="txt_content_customer_list"><?php echo $list['updated_at'] ?></p>
+                                    <p class="txt_content_customer_list"><?php echo date('d-m-Y', strtotime($list['updated_at'])) ?></p>
                                 </td>
                                 <td>
                                     <p class="txt_content_customer_list"><?php echo $list['updated_by'] ?></p>
