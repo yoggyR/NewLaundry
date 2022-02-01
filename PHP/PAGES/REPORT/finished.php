@@ -72,7 +72,7 @@ if (isset($_POST["search"])) {
                                         <p class="txt_table_on_process"><?php echo $finished['updated_by_header'] ?></p>
                                     </td>
                                     <td>
-                                        <a href="main.php?page=oft details&id=<?php echo $finished['pk_id_header'] ?>" class="btn btn_finished_details" type="button" title="Finished details"><img src="../../ASSET/ICON/PACKAGE/iconmonstr-id-card-1.svg" class="img_btn_finished_details"></a>
+                                        <a href="main.php?page=oft details&code=<?php echo $finished['transaction_code'] ?>" class="btn btn_finished_details" type="button" title="Finished details"><img src="../../ASSET/ICON/PACKAGE/iconmonstr-id-card-1.svg" class="img_btn_finished_details"></a>
                                     </td>
                                 </tr>
                                 <?php $no++; ?>

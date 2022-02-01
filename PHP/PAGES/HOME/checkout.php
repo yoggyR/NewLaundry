@@ -1,28 +1,14 @@
 <?php
 include('../FUNCTIONS/functions_transaction.php');
-
+$code = $_GET['code'];
 $showCheckout = showTransaction("SELECT * FROM t_header
                                 INNER JOiN m_packages ON t_header.fk_id_packages = m_packages.pk_id_packages
                                 INNER JOIN m_users    ON t_header.fk_id_users = m_users.pk_id_users
-                                ORDER BY pk_id_header DESC LIMIT 1");
-
-if (isset($_POST['pay'])) {
-    if (insertMoney($_POST) > 0) {
-        echo "
-                <script>
-                    alert ('Successfully');
-                    document.location.href = 'main.php?page=Details';
-                </script>";
-    } else {
-        echo "
-                <script>
-                    alert ('Failed');
-                </script>";
-    }
-}
+                                WHERE transaction_code = '$code'");
 ?>
 
 <?php foreach ($showCheckout as $checkout) : ?>
+
     <?php
     $pkIdHeader     = $checkout['pk_id_header'];
     $payNow         = $checkout['pay_now'];
@@ -31,7 +17,24 @@ if (isset($_POST['pay'])) {
     $price          = $checkout['price'];
     $remainder      = $checkout['remainder'];
     $already        = $checkout['already'];
+    $trCode         = $checkout['transaction_code'];
+
+    if (isset($_POST['pay'])) {
+        if (insertMoney($_POST) > 0) {
+            echo "
+                <script>
+                    alert ('Successfully');
+                    document.location.href = 'main.php?page=Details&code=$trCode';
+                </script>";
+        } else {
+            echo "
+                <script>
+                    alert ('Failed');
+                </script>";
+        }
+    }
     ?>
+
 
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <label><span style='font-weight: bold;'><?php echo ($pages); ?></span></label>
@@ -45,6 +48,8 @@ if (isset($_POST['pay'])) {
                     <input type="hidden" name="updated_by" value="<?php echo $_SESSION['username'] ?>">
                     <input type="hidden" name="already" value="<?php echo $already ?>">
                     <input type="hidden" name="remainder" value="<?php echo $remainder ?>">
+                    <input type="hidden" name="checkout_status" value="Finished">
+                    <input type="hidden" name="transaction_code" value="<?php echo $trCode ?>">
                     <div class="row">
                         <div class="col-12 pb-3">
                             <div class="row">

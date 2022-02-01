@@ -1,15 +1,16 @@
 <?php
 include('../FUNCTIONS/functions_transaction.php');
 
-$id = $_GET['id'];
+$code = $_GET['code'];
 
 $showOFTDetails = showTransaction("SELECT * FROM t_header
                                 INNER JOiN m_packages ON t_header.fk_id_packages = m_packages.pk_id_packages
                                 INNER JOIN m_users    ON t_header.fk_id_users = m_users.pk_id_users
-                                WHERE pk_id_header = $id");
+                                WHERE transaction_code = '$code'");
 
 ?>
 <?php foreach ($showOFTDetails as $OFTDetails) : ?>
+
     <?php
     $pkIdHeader         = $OFTDetails['pk_id_header'];
     $packagePrice       = $OFTDetails['package_price'];
@@ -20,6 +21,7 @@ $showOFTDetails = showTransaction("SELECT * FROM t_header
     $laundryStatus      = $OFTDetails['laundry_status'];
     $dateLaundryStatus  = $OFTDetails['date_laundry_status'];
     $estimate           = $OFTDetails['date_estimate'];
+    $trCode             = $OFTDetails['transaction_code'];
     ?>
 
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -76,7 +78,7 @@ $showOFTDetails = showTransaction("SELECT * FROM t_header
                                 </div>
                                 <div class="col-8 pb-3">
                                     <label><?php echo $OFTDetails['address'] ?></label>
-                                </div>                                
+                                </div>
                                 <div class="col-4 pb-3">
                                     <label class="fw-bold">Order</label>
                                 </div>
@@ -189,7 +191,7 @@ $showOFTDetails = showTransaction("SELECT * FROM t_header
                                             <?php if (laundryStatus($_POST) > 0) : ?>
                                                 <?php echo "
                                                         <script>
-                                                            document.location.href = 'main.php?page=Finished';
+                                                            document.location.href = 'main.php?page=oft details&code=$trCode';
                                                         </script>";
                                                 ?>
                                             <?php endif; ?>

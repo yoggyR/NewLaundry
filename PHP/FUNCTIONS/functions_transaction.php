@@ -37,6 +37,7 @@ function addTransaction($addTransaction)
         $already            = htmlspecialchars($addTransaction['already']);
         $remainder          = htmlspecialchars($addTransaction['remainder']);
         $pay                = htmlspecialchars($addTransaction['pay']);
+        $checkoutStatus     = htmlspecialchars($addTransaction['checkout_status']);
         $laundryStatus      = htmlspecialchars($addTransaction['laundry_status']);
         $dateLaundryStatus  = date('Y-m-d');
         $dateFinished       = date('Y-m-d');
@@ -58,6 +59,7 @@ function addTransaction($addTransaction)
                                                         already,
                                                         remainder,
                                                         pay_now,
+                                                        checkout_status,
                                                         laundry_status,
                                                         date_laundry_status,
                                                         created_at_header,
@@ -78,6 +80,7 @@ function addTransaction($addTransaction)
                                                         '$already',
                                                         '$remainder',
                                                         '$pay',
+                                                        '$checkoutStatus',
                                                         '$laundryStatus',
                                                         '$dateLaundryStatus',
                                                         '$createdAt',
@@ -142,8 +145,10 @@ function insertMoney($money)
     $rm             = htmlspecialchars($money['remainder']);
     $already        = $al + $pay;
     $remainder      = $price - $already;
+    $checkoutStatus = htmlspecialchars($money['checkout_status']);
     $updatedAt      = date('Y-m-d');
     $updatedBy      = htmlspecialchars($money['updated_by']);
+    $trCode          = htmlspecialchars($money['transaction_code']);
 
 
     if ($rm == 0) {
@@ -151,7 +156,7 @@ function insertMoney($money)
             echo "
             <script>
                 alert ('Failed');
-                document.location.href = 'main.php?page=Checkout';
+                document.location.href = 'main.php?page=Checkout&code=$trCode';
             </script>";
             exit;
         }
@@ -159,7 +164,7 @@ function insertMoney($money)
         echo "
         <script>
             alert ('Failed');
-            document.location.href = 'main.php?page=Details';
+            document.location.href = 'main.php?page=Details&code=$trCode';
         </script>";
         exit;
     }
@@ -168,6 +173,7 @@ function insertMoney($money)
                                                     already             = '$already',
                                                     remainder           = '$remainder',
                                                     pay_now             = '$pay',
+                                                    checkout_status     = '$checkoutStatus',
                                                     updated_by_header   = '$updatedBy',
                                                     updated_at_header   = '$updatedAt'
                                             WHERE   pk_id_header        = '$pkIdHeader'");

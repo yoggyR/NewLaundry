@@ -76,7 +76,7 @@ if (isset($_POST["search"])) {
                                     <p class="txt_table_on_process"><?php echo $OnProcess['updated_by_header'] ?></p>
                                 </td>
                                 <td>
-                                    <a href="main.php?page=oft details&id=<?php echo $OnProcess['pk_id_header'] ?>" class="btn btn_on_process_details" type="button" title="On process details"><img src="../../ASSET/ICON/PACKAGE/iconmonstr-id-card-1.svg" class="img_btn_on_process_details"></a>
+                                    <a href="main.php?page=oft details&code=<?php echo $OnProcess['transaction_code'] ?>" class="btn btn_on_process_details" type="button" title="On process details"><img src="../../ASSET/ICON/PACKAGE/iconmonstr-id-card-1.svg" class="img_btn_on_process_details"></a>
                                 </td>
                             </tr>
                             <?php $no++; ?>

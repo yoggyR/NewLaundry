@@ -1,10 +1,7 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-2 border-bottom">
     <label><span style="font-weight: bold;"> <?php echo ($pages); ?> </span></label>
 </div>
-<?php
-include('../FUNCTIONS/functions_transaction.php');
 
-?>
 <div class='row'>
     <div class="md-col-12">
         <div class="container">
@@ -28,3 +25,26 @@ include('../FUNCTIONS/functions_transaction.php');
         </div>
     </div>
 </div>
+<?php
+include('../FUNCTIONS/functions_transaction.php');
+if (isset($_POST['search'])) {
+    $findData = showTransaction("SELECT * FROM t_header WHERE transaction_code = '" . $_POST['keyword'] . "'");
+    foreach ($findData as $find) {
+        $idTr         = $find['pk_id_header'];
+        $trCode       = $find['transaction_code'];
+        $checkStatus  = $find['checkout_status'];
+    }
+    if ($_POST['keyword'] == $trCode && $checkStatus == 'Finished') {
+        echo "
+                <script>
+                    document.location.href = 'main.php?page=Details&code=$trCode';
+                </script>";
+    }
+    if ($_POST['keyword'] == $trCode && $checkStatus == 'On process') {
+        echo "
+                <script>
+                    document.location.href = 'main.php?page=Checkout&code=$trCode';
+                </script>";
+    }
+}
+?>

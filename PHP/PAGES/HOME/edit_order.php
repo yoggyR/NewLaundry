@@ -51,7 +51,7 @@ $listItem = showTransaction("SELECT * FROM bridge
                                 </div>
                                 <div class="col-6">
                                     <label for="finishdate" class="fw-bold">Estimate finished</label>
-                                    <input type="text" name="" class="form-control text-center icon_calendar_edit_order_estimate" id="finishdate" value="<?php echo date('d-m-Y', strtotime($editOrder['estimate_finished'])); ?>">
+                                    <input type="text" name="" class="form-control text-center icon_calendar_edit_order_estimate" id="finishdate" value="<?php echo date('d-m-Y', strtotime($editOrder['date_estimate'])); ?>">
 
                                 </div>
                             </div>

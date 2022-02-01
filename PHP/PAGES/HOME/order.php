@@ -16,13 +16,12 @@ $listItems   = showPackage("SELECT * FROM bridge INNER JOIN m_items
                             WHERE fk_id_packages = '$package[pk_id_packages]'");
 $customers = showPackage("SELECT * FROM m_positions 
 INNER JOIN m_users ON m_positions.pk_id_positions = m_users.fk_id_positions WHERE status = 'Client'");
-
 if (isset($_POST["checkout"])) {
     if (addTransaction($_POST) > 0) {
         echo "
             <script>
                 alert ('successfully');
-                document.location.href = 'main.php?page=Checkout';  
+                document.location.href = 'main.php?page=Checkout&code=" . $_POST['transaction_code'] . "';  
             </script>";
     } else {
         echo "
@@ -40,6 +39,7 @@ if (isset($_POST["checkout"])) {
             <input type="hidden" name="created_by" value="<?php echo $_SESSION['username'] ?>">
             <input type="hidden" name="updated_by" value="<?php echo $_SESSION['username'] ?>">
             <input type="hidden" name="laundry_status" value="On process">
+            <input type="hidden" name="checkout_status" value="On process">
             <input type="hidden" name="price">
             <input type="hidden" name="already">
             <input type="hidden" name="remainder">

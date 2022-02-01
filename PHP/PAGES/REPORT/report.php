@@ -87,7 +87,12 @@ if (isset($_POST["search"])) {
                 <?php endforeach; ?>
                 <label class="label_bar_report">
                     <p class="txt_head_bar_report">Profit</p>
-                    <h1 class="txt_body_bar_report_profit">IDR <?php echo $formatProfit = number_format("$totalProfit", 0, ",", ".") ?></h1>
+                    <?php if (empty($totalProfit)) : ?>
+                        <h1 class="txt_body_bar_report_profit">IDR 00</h1>
+                    <?php endif; ?>
+                    <?php if (!empty($totalProfit)) : ?>
+                        <h1 class="txt_body_bar_report_profit">IDR <?php echo $formatProfit = number_format("$totalProfit", 0, ",", ".") ?></h1>
+                    <?php endif; ?>
                     <img class="img_bar_report_profit" src="../../ASSET/ICON/PACKAGE/wallet-line.svg" alt="">
                     <p class="txt_powered_by_report_profit">Powered by Laundry&trade;</p>
                 </label>
